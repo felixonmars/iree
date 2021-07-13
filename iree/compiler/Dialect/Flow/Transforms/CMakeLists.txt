@@ -40,6 +40,7 @@ iree_cc_library(
     "FusionOfTensorOps.cpp"
     "HoistUnstreamableOps.cpp"
     "InjectDispatchTracing.cpp"
+    "MamulToMMT4DConversion.cpp"
     "OutlineDispatchRegions.cpp"
     "OutlineLargeConstants.cpp"
     "PadLinalgOps.cpp"

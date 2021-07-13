@@ -22,6 +22,12 @@ def ConvertConv2DToImg2Col :
   let constructor = "mlir::iree_compiler::IREE::Flow::createConvertConv2DToImg2ColPass()";
 }
 
+def ConvertMatmulToMMT4d :
+    Pass<"iree-flow-convert-matmul-to-mmt4d", "FuncOp"> {
+  let summary = "Convert linalg.matmul to linalg.mmt4d";
+  let constructor = "mlir::iree_compiler::IREE::Flow::createConvertLinalgMatmulOpToLinalgMMT4dPass()";
+}
+
 def ConvertToFlowTensorOps :
     Pass<"iree-flow-convert-to-flow-tensor-ops-pass", "FuncOp"> {
   let summary = "Convert operations to equivalent flow.tensor.* operations";

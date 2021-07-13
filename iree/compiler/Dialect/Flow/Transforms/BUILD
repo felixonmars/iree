@@ -45,6 +45,7 @@ cc_library(
         "InjectDispatchTracing.cpp",
         "OutlineDispatchRegions.cpp",
         "OutlineLargeConstants.cpp",
+        "MamulToMMT4DConversion.cpp",
         "PadLinalgOps.cpp",
         "PadTensorToSubTensorInsert.cpp",
         "PassDetail.h",

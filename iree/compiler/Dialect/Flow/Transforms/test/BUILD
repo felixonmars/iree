@@ -29,6 +29,7 @@ iree_lit_test_suite(
             "form_streams.mlir",
             "hoist_unstreamable_ops.mlir",
             "inject_dispatch_tracing.mlir",
+            "matmul_to_mmt4d.mlir",
             "outline_dispatch_regions.mlir",
             "outline_large_constants.mlir",
             "pad_linalg_ops.mlir",

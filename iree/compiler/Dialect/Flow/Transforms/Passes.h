@@ -50,6 +50,10 @@ std::unique_ptr<OperationPass<FuncOp>> createConvertConv2D1x1ToMatmulPass();
 /// using im2col tranformation.
 std::unique_ptr<OperationPass<FuncOp>> createConvertConv2DToImg2ColPass();
 
+std::unique_ptr<OperationPass<FuncOp>>
+createConvertLinalgMatmulOpToLinalgMMT4dPass(int M0 = 4, int N0 = 4,
+                                             int K0 = 4);
+
 /// Pass to convert a linalg.pad_tensor operation into a linalg.fill +
 /// subtensor_insert. This allows lowering the operation into a single kernel.
 std::unique_ptr<Pass> createPadTensorToSubTensorInsertPass();
